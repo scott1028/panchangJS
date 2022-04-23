@@ -412,7 +412,7 @@ function sun(jd: any) {
     var rs = r1 + dr; // radius vector
     var ab = (20.496 * (1 - ex * ex) / rs) / 3600;
     var ls = il + nutation(jd) - ab; // app len sun
-    var LsunYoga = ls;
+    LsunYoga = ls;
 
     ls = fix360(ls);
     // }
